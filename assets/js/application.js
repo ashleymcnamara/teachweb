@@ -1,6 +1,3 @@
-require('expose-loader?$!expose-loader?jQuery!jquery');
-require("bootstrap/dist/js/bootstrap.js");
-require("mithril/mithril.min.js");
 
 $(() => {
 
@@ -20,10 +17,10 @@ if (auth.authenticate()) {
 };
 
 function AppRouter() {
- // document.body.id = 'authenticated'
- // m.route(document.body, '/', {
-  //  '/': UserList 
- // })
+  document.body.id = 'authenticated'
+  m.route(document.body, '/', {
+   '/': UserList 
+  })
 }
 
 function LoginRouter() {
